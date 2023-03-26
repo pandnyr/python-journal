@@ -53,6 +53,11 @@ class Animal(object):
     def getAge(self):
         return self.age
     
+    def getName(self):
+        print(self.name)
 
 a1 = Animal("fish", 3)
+a1.getName()
+a2 = Animal("mockingbird", 7)
+a2.getName()
 
