@@ -10,3 +10,25 @@ print(array1)
 print(array2)
 print(array3)
 print(array4)
+
+
+
+#-------------------------------
+
+
+
+liste = [1,2,3,4]
+
+array = np.array(liste)
+
+liste2 = list(array)
+
+a = np.array([1,2,3])
+b = a
+b[0] = 5
+c = a
+
+d = np.array([1,2,3])
+
+e = d.copy()
+f = d.copy()
