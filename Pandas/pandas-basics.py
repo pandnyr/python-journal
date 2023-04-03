@@ -16,6 +16,20 @@ print(dataFrame1.describe()) # numeric features = columns (age, maas)
 
 print(dataFrame1["NAME"])
 print(dataFrame1["AGE"])
+print(dataFrame1.AGE)
+
 print(dataFrame1["MAAS"])
 
+dataFrame1["yeni feature"] = [-1,-2,-3,-4,-5,-6]
 
+print(dataFrame1.loc[:, "AGE"])
+
+print(dataFrame1.loc[:3,"AGE"])
+
+print(dataFrame1.loc[:3, "AGE":"NAME"])
+
+print(dataFrame1.loc[::-1,:])
+
+print(dataFrame1.loc[:,:"NAME"])
+
+print(dataFrame1.iloc[:,2])
