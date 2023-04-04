@@ -44,10 +44,12 @@ data2017 = pd.read_csv('../python-journal/Projects/World Happines Report/archive
 data2018 = pd.read_csv('../python-journal/Projects/World Happines Report/archive/2018.csv')
 data2019 = pd.read_csv('../python-journal/Projects/World Happines Report/archive/2019.csv')
 
-rows = []
+# rows = []
 
-for happines in data2015['Happines Score'].unique():
-    happinessRankSum = data2015.loc[data2015['Happines Score'] == happines]['Happiness Rank'].sum()
-    avgHappinessScorePerRegion = happinessRankSum/happines
-    dict1 = {'Happines Score': happines, 'Happiness Rank Per Region': avgHappinessScorePerRegion, 'numCountriesInRegion': numCountriesInRegion};
-    rows_list.append(dict1)
+# for happines in data2015['Happines Score'].unique():
+#     happinessRankSum = data2015.loc[data2015['Happines Score'] == happines]['Happiness Rank'].sum()
+#     avgHappinessScorePerRegion = happinessRankSum/happines
+#     dict1 = {'Happines Score': happines, 'Happiness Rank Per Region': avgHappinessScorePerRegion, 'numCountriesInRegion': numCountriesInRegion};
+#     rows_list.append(dict1)
+
+# print(rows)
