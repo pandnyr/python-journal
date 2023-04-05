@@ -1,4 +1,6 @@
 import pandas as pd
+import numpy as np
+from numpy.random import randn
 
 dictx = {
         "NAME":["ALI","VELI","KENAN","HILAL","AYSE","NISA"],
@@ -23,3 +25,21 @@ print(filtrelenmis_data2)
 
 
 print(dataFrame1[filtre1 & filtre2]) # 2 filtreye göre sıraladım.
+
+
+#--------------------------------------------------
+
+
+df = pd.DataFrame(randn(4,3),["A","B","C","D"],["Column1","Column2","Column3"])
+print(df)
+
+
+booleanDf = df > 0
+print(booleanDf)
+
+
+print(df[booleanDf])
+
+# df[df > 2] # filtrelenebilir
+
+print(df[df["Column1"] > 0])
