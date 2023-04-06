@@ -10,3 +10,11 @@ hierarchy = list(zip(outerIndex,innerIndex))
 hierarchy = pd.MultiIndex.from_tuples(hierarchy)
 
 print(hierarchy)
+
+
+df = pd.DataFrame(randn(9,3),hierarchy, columns = ["Column1","Column2","Column3"])
+print(df)
+
+##df.loc["Group1"]
+
+#cf.xs("Index1",level="Indexes")
