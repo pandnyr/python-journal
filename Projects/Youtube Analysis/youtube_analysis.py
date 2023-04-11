@@ -16,4 +16,19 @@ print(df["likes"].mean())
 print(df["dislikes"].mean())
 
 print(df[df["views"].max() == df["views"]]["title"].iloc[0])
+print(df[df["views"].min() == df["views"]]["title"].iloc[0])
 
+print(df.groupby("category_id").mean()["comment_count"])
+
+print(df["category_id"].value_counts())
+
+
+def countTitleCount(title):
+    return len(title)
+df["title_length"] = df["title"].apply(countTitleCount)
+
+
+def countTag(tags):
+    tagList = tags.split("|")
+    return len(tagList)
+df["tag_count"] = df["tags"].apply(countTag)
